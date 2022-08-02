@@ -192,8 +192,43 @@
           <p>Premier projet réalisé sur le thème d'un site netflix like.</p>
         </div>
   </section>
+
+        {% for projet in projets %}
+
+  <section class="card">
+        <figure>
+          <div class="img-overlay">
+            <img src="{{ projet.url }}" alt="Trulli">
+            <div class="overlay"><a href="{{ projet.url }}" target="_blank">Voir le site</a></div>
+            <div class="cont">
+              <div class="icons-img">
+      
+              </div>
+            </div>
+          </div>
+          <figcaption>{{ projet.titre }}</figcaption>
+        </figure>
+        <div class="card-content">
+          <p>{{ projet.dedcription }}</p>
+        </div>
+  </section>
+
+        {% else %}
+            <center>
+                <h1>Pas de projets !</h1>
+            </center>
+        {% endfor %}
+
+
+
     </div>
   </div>
+
+
+
+
+
+
 
 <footer id="footer-2-cols" class="site-footer">
         <div id="footer-container">

@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Projet{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+    body {
+        background: #334 !important; 
+    }
+    </style>
+{% endblock %}
+
+{% block body %}
+    <h1>Create new Projet</h1>
+
+    {{ include('projet/_form.html.twig') }}
+
+    <a href="{{ path('app_projet_index') }}">back to list</a>
+{% endblock %}
