@@ -24,6 +24,8 @@ class Projet
     #[ORM\Column(length: 255)]
     private ?string $url = null;
 
+
+
     #[ORM\OneToMany(mappedBy: 'projet', targetEntity: Media::class, orphanRemoval: true)]
     private Collection $medias;
 
@@ -73,6 +75,7 @@ class Projet
         return $this;
     }
 
+
     /**
      * @return Collection<int, Media>
      */
@@ -99,6 +102,7 @@ class Projet
                 $media->setProjet(null);
             }
         }
+        
 
         return $this;
     }

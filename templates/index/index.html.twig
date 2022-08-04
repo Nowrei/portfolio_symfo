@@ -1,5 +1,13 @@
 {% extends 'base.html.twig' %}
 
+{% block stylesheets %}
+    {{ parent() }}
+<link rel="stylesheet" href="{{ asset('../assets/css/index.css') }}" />
+<!-- link css -->
+<link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+{% endblock %}
+
 {% block body %}
 <header>
       <a href="#" class="brand">Cedric Furlan</a>
@@ -120,78 +128,6 @@
    
     <div class="container">
      <div class="cards">
-
-     <section class="card">
-        <figure>
-          <div class="img-overlay">
-            <img src="assets/img/Simplon.png" alt="Trulli">
-            <div class="overlay"><a href="/projet/type" target="_blank">Voir le site</a></div>
-            <div class="cont">
-              <div class="icons-img">
-      
-              </div>
-            </div>
-          </div>
-          <figcaption>Simplon-pc</figcaption>
-        </figure>
-        <div class="card-content">
-          <p>Premier projet réalisé en groupe, je me suis occupé de la page de contact et des différentes Navbarre et Footer.</p>
-        </div>
-  </section>
-
-     <section class="card">
-        <figure>
-          <div class="img-overlay">
-            <img src="assets/img/JoGee.png" alt="Trulli">
-            <div class="overlay"><a href="https://cedric.simplon-charleville.fr/Projet/JoGee/" target="_blank">Voir le site</a></div>
-            <div class="cont">
-              <div class="icons-img">
-      
-              </div>
-            </div>
-          </div>
-          <figcaption>JoGee</figcaption>
-        </figure>
-        <div class="card-content">
-          <p>Projet One-page réalisé en groupe.</p>
-        </div>
-  </section>
- 
-      <section class="card">
-        <figure>
-          <div class="img-overlay">
-            <img src="assets/img/Travala.png" alt="Trulli">
-            <div class="overlay"><a href="https://cedric.simplon-charleville.fr/Projet/Voyage/" target="_blank">Voir le site</a></div>
-            <div class="cont">
-              <div class="icons-img">
-      
-              </div>
-            </div>
-          </div>
-          <figcaption>Travalia</figcaption>
-        </figure>
-        <div class="card-content">
-          <p>Projet réalisé sur le thème d'une agence de voyage où je me suis occupé de la partie "Nos agences" et "Avis utilisateurs".</p>
-        </div>
-  </section>
-
-  <section class="card">
-        <figure>
-          <div class="img-overlay">
-            <img src="https://help.nflxext.com/0af6ce3e-b27a-4722-a5f0-e32af4df3045_what_is_netflix_5_en.png" alt="Trulli">
-            <div class="overlay"><a href="http://cedric.simplon-charleville.fr/Projet/Metropolis/index.php" target="_blank">Voir le site</a></div>
-            <div class="cont">
-              <div class="icons-img">
-      
-              </div>
-            </div>
-          </div>
-          <figcaption>Metropolis</figcaption>
-        </figure>
-        <div class="card-content">
-          <p>Premier projet réalisé sur le thème d'un site netflix like.</p>
-        </div>
-  </section>
 
         {% for projet in projets %}
 

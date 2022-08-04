@@ -181,17 +181,17 @@ header .btn{
   }
     
   .slide:first-child {
-    background: url('img/pexels-fauxels-3183202.jpg') no-repeat
+    background: url('../img/pexels-fauxels-3183202.jpg') no-repeat
       center top/cover;
   }
   .slide:nth-child(2) {
-    background: url('img/pexels-eduardo-dutra-2115217.jpg')
+    background: url('../img/pexels-eduardo-dutra-2115217.jpg')
     no-repeat
     center top/cover;
     
   }
   .slide:nth-child(3) {
-    background: url('img/pexels-olia-danilevich-4974914.jpg') no-repeat
+    background: url('../img/pexels-olia-danilevich-4974914.jpg') no-repeat
       center top/cover;
   }
 
@@ -240,7 +240,7 @@ span {
   color: black;
   border: rgb(255, 255, 255);
   border-radius: 50vw;
-  background: url(img/DSC_0060.jfif);
+  background: url(../img/DSC_0060.jfif);
   background-position-x: 359px;
   background-position-y: 462px;
   
